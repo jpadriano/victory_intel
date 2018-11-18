@@ -5,7 +5,7 @@ module.exports = {
     ENV: 'development',
     url: 'http://ec2-54-197-218-209.compute-1.amazonaws.com/',
     database: {
-        host: '54.197.218.209',
+        host: '127.0.0.1',
         port: '3306',
         db: 'victory',
         user: 'newuser',
