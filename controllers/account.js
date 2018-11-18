@@ -19,9 +19,13 @@ const Volunteer_ministries    = require('../models/index').Volunteer_ministries;
 exports.register = async (req, res) => {
     console.log('hello world!!');
 
+	try{
 	let result = await User.findAll();
 	console.log(result);
-	    console.log('hello worldX');
+	}catch(err){
+		console.log(err);
+	}
+	
 
 	result = await Campus_organization.findAll();
 	console.log(result);
