@@ -19,7 +19,7 @@ app.use(compression());
 /* API routes */
 app.use('/api/v1', require(`${__dirname}/config/router`)(express.Router()));
 app.use('(/)', (req, res, next) => {return res.redirect('/api/v1')});
-app.use((req, res, next) => {return ReE(res, 'Resource not found', 404)});
+app.use((req, res, next) => {return (res, 'Resource not found', 404)});
 
 server.listen(config.PORT,function() {
     console.log('Express server listening on port ' + server.address().port);
