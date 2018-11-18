@@ -3,16 +3,16 @@
 /* Add development configurations here */
 module.exports = {
     ENV: 'development',
-    url: 'http://127.0.0.1:3000',
+    url: 'http://ec2-54-197-218-209.compute-1.amazonaws.com/',
     database: {
-        host: '127.0.0.1',
+        host: '54.197.218.209',
         port: '3306',
         db: 'victory',
         user: 'root',
         password: 'root'
     },
     server: {
-        host: '127.0.0.1',
+        host: 'http://ec2-54-197-218-209.compute-1.amazonaws.com/',
         port: 3000
     },
     messageBirdKey: {
