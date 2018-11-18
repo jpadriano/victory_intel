@@ -18,9 +18,9 @@ const Volunteer_ministries    = require('../models/index').Volunteer_ministries;
 // username, password, number, name, email, address or victory los banos
 exports.register = async (req, res) => {
     console.log('hello world!!');
-
+	let result;
 	try{
-	let result = await User.findAll();
+	result = await User.findAll();
 	console.log(result);
 	}catch(err){
 		console.log(err);
