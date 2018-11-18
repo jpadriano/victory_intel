@@ -51,7 +51,7 @@ exports.register = async (req, res) => {
 	result = await Volunteer_ministries.findAll();
 	data.push(result);
 	
-	return {res, {'message: ok', data}, 200};
+	return (res, {'message: ok', data}, 200);
 }
 
 exports.login =  async (req, res) => {
