@@ -21,7 +21,8 @@ exports.register = async (req, res) => {
 
 	let result = await User.findAll();
 	console.log(result);
-	
+	    console.log('hello worldX');
+
 	result = await Campus_organization.findAll();
 	console.log(result);
 	
