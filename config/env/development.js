@@ -20,11 +20,5 @@ module.exports = {
     },
     jwt: {
         secret: 'secret@victory'
-    },
-    s3: {
-        directory: '../temp/',
-        bucket_name: 'bingwit',
-        iam_user_key: 'AKIAIXWVD3VMGKJ5WSXQ',
-        iam_user_secret: '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'
     }
 };
