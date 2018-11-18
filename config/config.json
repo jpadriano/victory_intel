@@ -1,9 +1,9 @@
 {
   "development": {
     "username": "root",
-    "password": "password",
+    "password": "root",
     "database": "victory",
-    "host": "127.0.0.1",
+    "host": "http://ec2-54-197-218-209.compute-1.amazonaws.com/",
     "dialect": "mysql"
   },
   "test": {
