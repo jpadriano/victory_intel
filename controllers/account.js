@@ -26,6 +26,7 @@ exports.register = async (req, res) => {
 		console.log(err);
 	}
 	
+    console.log('after');
 
 	result = await Campus_organization.findAll();
 	console.log(result);
