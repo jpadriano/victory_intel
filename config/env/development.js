@@ -8,8 +8,8 @@ module.exports = {
         host: '54.197.218.209',
         port: '3306',
         db: 'victory',
-        user: 'root',
-        password: 'root'
+        user: 'newuser',
+        password: 'password'
     },
     server: {
         host: 'http://ec2-54-197-218-209.compute-1.amazonaws.com/',
