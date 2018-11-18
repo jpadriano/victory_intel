@@ -18,39 +18,40 @@ const Volunteer_ministries    = require('../models/index').Volunteer_ministries;
 // username, password, number, name, email, address or victory los banos
 exports.register = async (req, res) => {
     console.log('hello world!!');
-	let result;
+	let result, data = [];
 	try{
 	result = await User.findAll();
+	data.push(result);
 	console.log(result);
 	}catch(err){
 		console.log(err);
 	}
-	
-    console.log('after');
 
 	result = await Campus_organization.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await College_school.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await Course.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await Leadership_123_title.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await Onetwoone_title.findAll();
-	console.log(result);
+	data.push(result);
 		
 	result = await Onetwoone_title.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await Purple_book_class_title.findAll();
-	console.log(result);
+	data.push(result);
 	
 	result = await Volunteer_ministries.findAll();
-	console.log(result);
+	data.push(result);
+	
+	return {res, {'message: ok', data}, 200};
 }
 
 exports.login =  async (req, res) => {
