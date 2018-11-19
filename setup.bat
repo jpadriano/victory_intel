@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Installing dependencies..."
-
+mysql -u newuser -e "DROP DATABASE victory" -p
 echo "Creating tables for the database"
 mysql -u newuser -e "CREATE DATABASE victory" -p
 echo "Database created. Create user victory. Will prompt an error if user already exists"
@@ -11,3 +11,4 @@ mysql -u newuser -e "GRANT ALL PRIVILEGES ON *.* TO 'victory'@'%' WITH GRANT OPT
 echo "Privileges granted. Flush privileges"
 mysql -u newuser -e "FLUSH PRIVILEGES" -p;
 sequelize db:migrate
+sequelize db:seed:all
