@@ -11,22 +11,18 @@ module.exports = {
 		},
 		birthday: {
 		  type: Sequelize.DATE,
-		  notNull: true,
 		  allowNull:false
 		},
 		victory_group_schedule_day: {
 		  type:Sequelize.STRING(10),
-		  notNull: true,
 		  allowNull:false
 		},
 		victory_group_schedule_day: {
 		  type:Sequelize.TIME,
-		  notNull: true,
 		  allowNull:false
 		},
 		batch: {
 		  type:Sequelize.INTEGER,
-		  notNull: true,
 		  allowNull:false
 		},
 		college_school_id: {
@@ -41,7 +37,6 @@ module.exports = {
 		},
 		expected_graduation: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		},
 		onetwoone_id: {
@@ -56,7 +51,6 @@ module.exports = {
 		},
 		victory_weekend: {
 		  type:Sequelize.STRING(10),
-		  notNull: true,
 		  allowNull:false
 		},
 		purple_book_class_title_id: {
@@ -66,12 +60,10 @@ module.exports = {
 		},
 		making_disciples_class: {
 		  type:Sequelize.STRING(10),
-		  notNull: true,
 		  allowNull:false
 		},
 		church_community: {
 		  type:Sequelize.STRING(10),
-		  notNull: true,
 		  allowNull:false
 		},
 		leadership_123_title_id: {
@@ -81,42 +73,48 @@ module.exports = {
 		},
 		doing_121_with_others: {
 		  type:Sequelize.STRING(10),
-		  notNull: true,
 		  allowNull:false
 		},
 		staff_enc: {
 		  type:Sequelize.STRING(64),
-		  notNull: true,
 		  allowNull:false
 		},
 		ministry_group: {
 		  type:Sequelize.STRING(64),
-		  notNull: true,
+		  allowNull:false
+		},
+		topic: {
+		  type:Sequelize.STRING(64),
+		  allowNull:false
+		},
+		user_id: {
+		  type: Sequelize.UUID,
+		  defaultValue: Sequelize.UUIDV4,
+		  allowNull:false
+		},
+		leader_id: {
+		  type: Sequelize.UUID,
+		  defaultValue: Sequelize.UUIDV4,
 		  allowNull:false
 		},
 		lg_leader: {
 		  type:Sequelize.STRING(64),
-		  notNull: true,
 		  allowNull:false
 		},
 		vg_leader: {
 		  type:Sequelize.STRING(64),
-		  notNull: true,
 		  allowNull:false
 		},
 		createdAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		},
 		updatedAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		},
 		deletedAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		}
     });

@@ -11,22 +11,18 @@ module.exports = {
 		},
 		ministry: {
 		  type:Sequelize.STRING(100),
-		  notNull: true,
 		  allowNull:false
 		},
 		createdAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		},
 		updatedAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		},
 		deletedAt: {
 		  type:Sequelize.DATE,
-		  notNull: true,
 		  allowNull:true
 		}
     });

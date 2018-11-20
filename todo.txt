@@ -1,0 +1,7 @@
+remove leadership 123 title in db
+remove purple book class title
+note i cant have profile_id and leader_id, because
+add personal ministry group
+add number of victory groups handling
+add schedule of victory groups
+add victory group interns
