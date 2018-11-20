@@ -9,22 +9,18 @@ module.exports = (sequelize, DataTypes) => {
     },
     name: {
       type:DataTypes.STRING(100),
-      notNull: true,
       allowNull:false
     },
 	createdAt: {
       type:DataTypes.DATE,
-      notNull: true,
       allowNull:true
     },
 	updatedAt: {
       type:DataTypes.DATE,
-      notNull: true,
       allowNull:true
     },
     deletedAt: {
       type:DataTypes.DATE,
-      notNull: true,
       allowNull:true
     }
   }, {});
