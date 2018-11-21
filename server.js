@@ -1,5 +1,4 @@
 'use strict';
-
 const body_parser       = require('body-parser');
 const compression       = require('compression');
 const express           = require('express');
@@ -16,6 +15,7 @@ app.use(body_parser.urlencoded({extended: false}));
 app.use(body_parser.json());
 app.use(compression());
 
+//app.use(await_to);
 /* API routes */
 app.use('/api/v1', require(`${__dirname}/config/router`)(express.Router()));
 app.use('(/)', (req, res, next) => {return res.redirect('/api/v1')});

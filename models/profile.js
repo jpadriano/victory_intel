@@ -7,9 +7,10 @@ module.exports = (sequelize, Sequelize) => {
       defaultValue: Sequelize.UUIDV4,
       allowNull:false
     },
-    birthday: {
-      type: Sequelize.DATE,
-      allowNull:false
+	status: {
+      type:Sequelize.STRING(16),
+      allowNull:true,
+      defaultValue: null
     },
     victory_group_schedule_day: {
       type:Sequelize.STRING(10),
@@ -39,11 +40,6 @@ module.exports = (sequelize, Sequelize) => {
       allowNull:true
     },
 	onetwoone_title_id: {
-      type: Sequelize.UUID,
-      defaultValue: Sequelize.UUIDV4,
-      allowNull:false
-    },
-	onetwoone_id: {
       type: Sequelize.UUID,
       defaultValue: Sequelize.UUIDV4,
       allowNull:false

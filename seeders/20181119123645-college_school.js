@@ -1,5 +1,5 @@
 'use strict';
-let schools =  ['CAS','CAFS','CDC','CEM','CEAT','CFNR','CHE','CVM','LSPU','HIGHSCHOOL','CPAF']
+let schools =  ['CAS','CAFS','CDC','CEM','CEAT','CFNR','CHE','CVM','LSPU','HIGHSCHOOL','CPAF'];
 const uuidv4 = require('uuid/v4');
 module.exports = {
   up: (queryInterface, Sequelize) => {

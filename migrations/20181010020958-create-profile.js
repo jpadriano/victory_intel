@@ -9,9 +9,9 @@ module.exports = {
 		  defaultValue: Sequelize.UUIDV4,
 		  allowNull:false
 		},
-		birthday: {
-		  type: Sequelize.DATE,
-		  allowNull:false
+		status: {
+		  type:Sequelize.STRING(16),
+		  defaultValue: null
 		},
 		victory_group_schedule_day: {
 		  type:Sequelize.STRING(10),
@@ -38,11 +38,6 @@ module.exports = {
 		expected_graduation: {
 		  type:Sequelize.DATE,
 		  allowNull:true
-		},
-		onetwoone_id: {
-		  type: Sequelize.UUID,
-		  defaultValue: Sequelize.UUIDV4,
-		  allowNull:false
 		},
 		onetwoone_title_id: {
 		  type: Sequelize.UUID,
